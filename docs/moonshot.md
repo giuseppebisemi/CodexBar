@@ -13,7 +13,8 @@ needs a valid API key to show the current account balance.
 
 ## Data sources
 
-1. **API key** stored in `~/.codexbar/config.json` or supplied via `MOONSHOT_API_KEY` / `MOONSHOT_KEY`.
+1. **API key** stored in `~/.codexbar/config.json`, supplied via `MOONSHOT_API_KEY` / `MOONSHOT_KEY`,
+   or discovered from `~/.kimi/config.toml` when the Kimi CLI has a managed Moonshot provider entry.
    CodexBar stores the key in config after you paste it in Settings → Providers → Moonshot.
 2. **Region**
    - International: `https://api.moonshot.ai/v1/users/me/balance`

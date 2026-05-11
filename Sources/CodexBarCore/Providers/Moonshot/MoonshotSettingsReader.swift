@@ -22,6 +22,12 @@ public struct MoonshotSettingsReader: Sendable {
       }
     }
 
+    if let configContents = Self.loadKimiConfigContents() {
+      if let key = Self.parseKimiConfigAPIKey(configContents) {
+        return key
+      }
+    }
+
     return nil
   }
 
@@ -44,5 +50,39 @@ public struct MoonshotSettingsReader: Sendable {
       value.removeLast()
     }
     return value.trimmingCharacters(in: .whitespacesAndNewlines)
+  }
+
+  public static func parseKimiConfigAPIKey(_ contents: String) -> String? {
+    let lines = contents.split(whereSeparator: \.isNewline)
+    var inMoonshotSection = false
+
+    for rawLine in lines {
+      let line = rawLine.split(separator: "#", maxSplits: 1, omittingEmptySubsequences: false).first
+      let trimmed = line?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+      guard !trimmed.isEmpty else { continue }
+
+      if trimmed.hasPrefix("[") {
+        inMoonshotSection = (trimmed == "[providers.\"managed:moonshot-ai\"]")
+        continue
+      }
+
+      guard inMoonshotSection else { continue }
+
+      let parts = trimmed.split(separator: "=", maxSplits: 1, omittingEmptySubsequences: true)
+      guard parts.count == 2 else { continue }
+      let key = parts[0].trimmingCharacters(in: .whitespacesAndNewlines)
+      guard key == "api_key" else { continue }
+
+      let value = Self.cleaned(parts[1].trimmingCharacters(in: .whitespacesAndNewlines))
+      return value.isEmpty ? nil : value
+    }
+
+    return nil
+  }
+
+  private static func loadKimiConfigContents() -> String? {
+    let url = FileManager.default.homeDirectoryForCurrentUser
+      .appendingPathComponent(".kimi/config.toml")
+    return try? String(contentsOf: url, encoding: .utf8)
   }
 }
