@@ -813,6 +813,7 @@ extension UsageStore {
                 .kiro: "Kiro debug log not yet implemented",
                 .kimi: "Kimi debug log not yet implemented",
                 .kimik2: "Kimi K2 debug log not yet implemented",
+                .moonshot: "Moonshot debug log not yet implemented",
                 .jetbrains: "JetBrains AI debug log not yet implemented",
             ]
             let buildText = {
@@ -887,7 +888,7 @@ extension UsageStore {
                         hasEnvToken: deepSeekHasEnvToken,
                         hasTokenAccount: deepSeekHasTokenAccount)
                 case .gemini, .antigravity, .opencode, .opencodego, .factory, .copilot, .vertexai, .kilo, .kiro, .kimi,
-                     .kimik2, .jetbrains, .perplexity, .abacus, .mistral:
+                     .kimik2, .moonshot, .jetbrains, .perplexity, .abacus, .mistral:
                     return unimplementedDebugLogMessages[provider] ?? "Debug log not yet implemented"
                 }
             }

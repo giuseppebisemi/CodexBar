@@ -1,5 +1,5 @@
 ---
-summary: "Provider data sources and parsing overview (Codex, Claude, Gemini, Antigravity, Cursor, OpenCode, Alibaba Coding Plan, Droid/Factory, z.ai, Copilot, Kimi, Kilo, Kimi K2, Kiro, Warp, Vertex AI, Augment, Amp, Ollama, JetBrains AI, OpenRouter, Abacus AI, Mistral, DeepSeek)."
+summary: "Provider data sources and parsing overview (Codex, Claude, Gemini, Antigravity, Cursor, OpenCode, Alibaba Coding Plan, Droid/Factory, z.ai, Copilot, Kimi, Kilo, Kimi K2, Kiro, Warp, Vertex AI, Augment, Amp, Ollama, JetBrains AI, OpenRouter, Abacus AI, Mistral, DeepSeek, Moonshot)."
 read_when:
   - Adding or modifying provider fetch/parsing
   - Adjusting provider labels, toggles, or metadata
@@ -42,6 +42,7 @@ until the session is invalid, to avoid repeated Keychain prompts.
 | Abacus AI | Browser cookies → compute points + billing API (`web`). |
 | Mistral | Console billing API via Ory Kratos session cookies (`web`). |
 | DeepSeek | API key (config, overrides env) → balance endpoint (`api`). |
+| Moonshot | API key (config/env) → balance endpoint (`api`). |
 
 ## Codex
 - Web dashboard (optional, off by default): `https://chatgpt.com/codex/settings/usage` via WebView + browser cookies.

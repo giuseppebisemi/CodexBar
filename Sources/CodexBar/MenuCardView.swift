@@ -796,6 +796,10 @@ extension UsageMenuCardView.Model {
             return [peakStatus.label]
         }
 
+        if input.provider == .moonshot, input.snapshot != nil {
+            return ["No limit set"]
+        }
+
         guard input.provider == .openrouter,
               let openRouter = input.snapshot?.openRouterUsage
         else {

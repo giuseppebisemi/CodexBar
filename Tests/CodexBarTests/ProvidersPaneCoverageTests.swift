@@ -32,6 +32,19 @@ struct ProvidersPaneCoverageTests {
     }
 
     @Test
+    func `moonshot menu bar metric picker shows balance only copy`() {
+        let settings = Self.makeSettingsStore(suite: "ProvidersPaneCoverageTests-moonshot-picker")
+        let store = Self.makeUsageStore(settings: settings)
+        let pane = ProvidersPane(settings: settings, store: store)
+
+        let picker = pane._test_menuBarMetricPicker(for: .moonshot)
+        #expect(picker?.options.map(\.id) == [
+            MenuBarMetricPreference.automatic.rawValue,
+        ])
+        #expect(picker?.subtitle == "Shows the Moonshot balance in the menu bar.")
+    }
+
+    @Test
     func `cursor menu bar metric picker omits tertiary api lane when snapshot has no api metric`() {
         let settings = Self.makeSettingsStore(suite: "ProvidersPaneCoverageTests-cursor-no-tertiary-picker")
         let store = Self.makeUsageStore(settings: settings)
@@ -156,6 +169,14 @@ struct ProvidersPaneCoverageTests {
 
         #expect(row?.label == "Balance")
         #expect(row?.value == "$4.61")
+    }
+
+    @Test
+    func `provider detail plan row formats moonshot as balance`() {
+        let row = ProviderDetailView<EmptyView>.planRow(provider: .moonshot, planText: "Balance: $49.58")
+
+        #expect(row?.label == "Balance")
+        #expect(row?.value == "$49.58")
     }
 
     @Test
