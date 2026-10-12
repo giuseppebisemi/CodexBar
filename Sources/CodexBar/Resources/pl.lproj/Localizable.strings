@@ -2519,3 +2519,8 @@
 "Required. The ws_… ID of the workspace the key can bill. Or set FLORA_WORKSPACE_ID." = "Wymagane. Identyfikator ws_… obszaru roboczego, który klucz może rozliczać. Lub ustaw FLORA_WORKSPACE_ID.";
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
+
+/* Parallel provider cookie settings */
+"Paste the Cookie header from a signed-in platform.parallel.ai request." = "Wklej nagłówek Cookie z zalogowanego żądania platform.parallel.ai.";
+"Open Parallel Platform" = "Otwórz platformę Parallel";
+"Automatic imports Chrome cookies from platform.parallel.ai." = "Automatycznie importuje pliki cookie Chrome z platform.parallel.ai.";

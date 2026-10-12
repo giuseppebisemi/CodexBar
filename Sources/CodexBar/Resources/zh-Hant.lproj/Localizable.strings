@@ -2494,3 +2494,8 @@
 "Required. The ws_… ID of the workspace the key can bill. Or set FLORA_WORKSPACE_ID." = "必填。金鑰可計費的工作區 ws_… ID。或設定 FLORA_WORKSPACE_ID。";
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
+
+/* Parallel provider cookie settings */
+"Paste the Cookie header from a signed-in platform.parallel.ai request." = "貼上已登入的 platform.parallel.ai 請求中的 Cookie 標頭。";
+"Open Parallel Platform" = "開啟 Parallel 平台";
+"Automatic imports Chrome cookies from platform.parallel.ai." = "自動從 platform.parallel.ai 匯入 Chrome Cookie。";

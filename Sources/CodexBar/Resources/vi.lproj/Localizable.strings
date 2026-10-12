@@ -2517,3 +2517,8 @@
 "Required. The ws_… ID of the workspace the key can bill. Or set FLORA_WORKSPACE_ID." = "Bắt buộc. ID ws_… của không gian làm việc mà khóa có thể thanh toán. Hoặc đặt FLORA_WORKSPACE_ID.";
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
+
+/* Parallel provider cookie settings */
+"Paste the Cookie header from a signed-in platform.parallel.ai request." = "Dán tiêu đề Cookie từ yêu cầu platform.parallel.ai đã đăng nhập.";
+"Open Parallel Platform" = "Mở Nền tảng Parallel";
+"Automatic imports Chrome cookies from platform.parallel.ai." = "Tự động nhập cookie Chrome từ platform.parallel.ai.";

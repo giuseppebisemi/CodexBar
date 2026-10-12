@@ -18,6 +18,7 @@ final class AccountAPIProviderScreenshotRenderTests: XCTestCase {
         let sofya = try await SofyaPluginTests.fetch(engine: .quickJS)
         let fal = try await FalPluginTests.fetch(engine: .quickJS)
         let flora = try await FloraPluginTests.fetch(engine: .quickJS)
+        let parallel = try await ParallelPluginTests.fetch(engine: .quickJS)
         for (provider, snapshot) in [
             (UsageProvider.cosmic, cosmic),
             (.aerostack, aerostack),
@@ -25,6 +26,7 @@ final class AccountAPIProviderScreenshotRenderTests: XCTestCase {
             (.sofya, sofya),
             (.fal, fal),
             (.flora, flora),
+            (.parallel, parallel),
         ] {
             let model = try UsageMenuCardView.Model.make(.init(
                 provider: provider,

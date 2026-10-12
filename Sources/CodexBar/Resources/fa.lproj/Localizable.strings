@@ -2520,3 +2520,8 @@
 "Required. The ws_… ID of the workspace the key can bill. Or set FLORA_WORKSPACE_ID." = "الزامی. شناسه ws_… فضای کاری که کلید می‌تواند صورت‌حساب آن را ببیند. یا FLORA_WORKSPACE_ID را تنظیم کنید.";
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
+
+/* Parallel provider cookie settings */
+"Paste the Cookie header from a signed-in platform.parallel.ai request." = "سرصفحه Cookie را از یک درخواست platform.parallel.ai وارد شده جایگذاری کنید.";
+"Open Parallel Platform" = "پلتفرم Parallel باز";
+"Automatic imports Chrome cookies from platform.parallel.ai." = "کوکی‌های Chrome را به طور خودکار از platform.parallel.ai وارد می‌کند.";

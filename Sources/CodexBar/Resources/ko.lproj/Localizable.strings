@@ -2484,3 +2484,8 @@
 "Required. The ws_… ID of the workspace the key can bill. Or set FLORA_WORKSPACE_ID." = "필수. 키가 결제할 수 있는 워크스페이스의 ws_… ID. 또는 FLORA_WORKSPACE_ID를 설정하세요.";
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
+
+/* Parallel provider cookie settings */
+"Paste the Cookie header from a signed-in platform.parallel.ai request." = "로그인된 platform.parallel.ai 요청에서 Cookie 헤더를 붙여넣습니다.";
+"Open Parallel Platform" = "Parallel 플랫폼 열기";
+"Automatic imports Chrome cookies from platform.parallel.ai." = "자동은 platform.parallel.ai에서 Chrome 쿠키를 가져옵니다.";
