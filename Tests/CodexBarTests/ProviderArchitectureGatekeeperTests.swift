@@ -233,9 +233,7 @@ struct ProviderArchitectureGatekeeperTests {
         #expect(BedrockProviderDescriptor.descriptor.tokenCost.menuHintLines == [
             .literal("AWS Cost Explorer billing can lag."),
         ])
-        #expect(OpenAIAPIProviderDescriptor.descriptor.tokenCost.menuHintLines == [
-            .literal("Reported by OpenAI Admin API organization usage."),
-        ])
+        #expect(OpenAIAPIProviderDescriptor.descriptor.tokenCost.menuHintLines.isEmpty)
         #expect(MistralProviderDescriptor.descriptor.tokenCost.menuHintLines == [
             .literal("Reported by Mistral billing usage."),
         ])
@@ -3355,7 +3353,7 @@ struct ProviderArchitectureGatekeeperTests {
             anchor: "guard self.provider(for: record) == .claude else { return .cli }",
             expectedProviderIDs: ["claude", "codex", "pi"],
             expectedReferenceCount: 4,
-            expectedReferenceFingerprint: ["pi@0", "pi@1", "claude@13", "codex@19"],
+            expectedReferenceFingerprint: ["pi@0", "pi@1", "claude@13", "codex@21"],
             reason: "This exact host integration maps a provider-owned process, path, or window contract."),
         AllowedProviderConstruct(
             path: "Sources/CodexBarCore/AgentSession.swift",
