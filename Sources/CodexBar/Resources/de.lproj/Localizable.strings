@@ -1413,6 +1413,7 @@
 "menu_bar_layout_preset_icon_only" = "Nur Symbol";
 "menu_bar_layout_preset_percent_reset" = "Prozent und Zurücksetzung";
 "menu_bar_layout_preset_compact_stacked" = "Kompakt gestapelt";
+"menu_bar_layout_preset_bars_stacked" = "Fortschrittsbalken gestapelt";
 "menu_bar_layout_preset_custom" = "Benutzerdefiniert";
 "menu_bar_layout_live_preview" = "Live-Vorschau";
 "menu_bar_layout_default_preview" = "Vorschau des Standardlayouts";
@@ -1450,7 +1451,7 @@
 "menu_bar_layout_token_reset_at" = "Zurücksetzung um";
 "menu_bar_layout_token_runs_out" = "Reicht bis";
 "menu_bar_layout_token_cost_today" = "Kosten heute";
-"menu_bar_layout_token_cost_30d" = "Kosten 30 Tage";
+"menu_bar_layout_token_cost_window" = "Kosten (Verlaufsfenster)";
 "menu_bar_layout_token_space" = "Leerraum";
 "menu_bar_layout_token_line_break" = "Zeilenumbruch";
 "menu_bar_layout_token_separator_accessibility" = "Trennpunkt";
@@ -1468,7 +1469,6 @@
 "Reset time unavailable" = "Zurücksetzung um: Nicht verfügbar";
 "Run-out estimate unavailable" = "Reicht bis: Nicht verfügbar";
 "Cost today unavailable" = "Kosten heute: Nicht verfügbar";
-"30-day cost unavailable" = "Kosten 30 Tage: Nicht verfügbar";
 "Resets" = "Zurücksetzungen";
 "codex_workspaces_cost_unavailable" = "Kosten nicht verfügbar";
 "codex_workspaces_elevated_usage" = "Erhöhte Nutzung";
@@ -1553,6 +1553,7 @@
 "5-hour usage" = "5-Stunden-Nutzung";
 "7-day usage" = "7-Tage-Nutzung";
 "Total usage" = "Gesamtnutzung";
+"claude_oauth_keychain_access_disabled" = "Der Keychain-Zugriff ist deaktiviert, daher kann CodexBar die Anmeldedaten von Claude nicht lesen.";
 "claude_oauth_keychain_access_revoked" = "Der Zugriff auf den Claude-Schlüsselbund wurde durch die Token-Rotation von Claude Code widerrufen. Klicken Sie auf „Aktualisieren“, um den Zugriff erneut zu gewähren, oder stellen Sie die Claude-Nutzungsquelle auf CLI/Web um.";
 "claude_showing_last_known_usage" = "Letzte bekannte Nutzung wird angezeigt (erfasst: %@).";
 "claude_limited_usage_detail" = "Eingeschränkte Nutzungsdetails";
@@ -2515,7 +2516,15 @@
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
 
-/* Parallel provider cookie settings */
-"Paste the Cookie header from a signed-in platform.parallel.ai request." = "Fügen Sie den Cookie-Header aus einer angemeldeten platform.parallel.ai-Anfrage ein.";
-"Open Parallel Platform" = "Öffnen Sie die Parallel-Plattform";
-"Automatic imports Chrome cookies from platform.parallel.ai." = "Importiert automatisch Chrome-Cookies von platform.parallel.ai.";
+"Plan renewal / expiry" = "Planverlängerung / Ablauf";
+
+"Hidden by the global optional credits, spending & billing setting." = "Durch die globale Einstellung für optionale Guthaben, Ausgaben und Abrechnungsdetails ausgeblendet.";
+
+"Provider order updated" = "Anbieterreihenfolge aktualisiert";
+"Undo" = "Rückgängig";
+"Clear filters" = "Filter löschen";
+"Change provider order" = "Anbieterreihenfolge ändern";
+"Provider sorting" = "Anbietersortierung";
+"Only enabled providers" = "Nur aktivierte Anbieter";
+"Restore default order" = "Standardreihenfolge wiederherstellen";
+"Also restores the provider order in the menu bar. Can be undone." = "Stellt auch die Anbieterreihenfolge in der Menüleiste wieder her. Kann rückgängig gemacht werden.";

@@ -67,16 +67,9 @@ defineProvider({
     }
     const data = payload && typeof payload === "object" && payload.kind === "ok" ? payload.data : undefined;
     if (!data || typeof data !== "object" || !finite(data.balance)) return formatChanged();
-    const balance = {
-      balanceCents: data.balance,
-      pendingDebitCents: finite(data.pendingDebitBalanceCents) ? data.pendingDebitBalanceCents : 0,
-    };
-
-    const rows: CodexBarDetailRow[] = [
-      { label: "Balance", value: ctx.format.currency(balance.balanceCents / 100, "USD") },
-    ];
-    if (balance.pendingDebitCents !== 0) {
-      rows.push({ label: "Pending debit", value: ctx.format.currency(balance.pendingDebitCents / 100, "USD") });
+    const rows: CodexBarDetailRow[] = [{ label: "Balance", value: ctx.format.currency(data.balance / 100, "USD") }];
+    if (finite(data.pendingDebitBalanceCents) && data.pendingDebitBalanceCents !== 0) {
+      rows.push({ label: "Pending debit", value: ctx.format.currency(data.pendingDebitBalanceCents / 100, "USD") });
     }
     return {
       details: [{ title: "Account balance", rows }],

@@ -1410,6 +1410,7 @@
 "menu_bar_layout_preset_icon_only" = "Лише значок";
 "menu_bar_layout_preset_percent_reset" = "Відсоток і скидання";
 "menu_bar_layout_preset_compact_stacked" = "Компактно у два рядки";
+"menu_bar_layout_preset_bars_stacked" = "Індикатори прогресу штабелем";
 "menu_bar_layout_preset_custom" = "Користувацький";
 "menu_bar_layout_live_preview" = "Попередній перегляд";
 "menu_bar_layout_default_preview" = "Перегляд типового макета";
@@ -1447,7 +1448,7 @@
 "menu_bar_layout_token_reset_at" = "Скидання о";
 "menu_bar_layout_token_runs_out" = "Закінчиться";
 "menu_bar_layout_token_cost_today" = "Вартість сьогодні";
-"menu_bar_layout_token_cost_30d" = "Вартість за 30 днів";
+"menu_bar_layout_token_cost_window" = "Вартість (Вікно історії)";
 "menu_bar_layout_token_space" = "Пробіл";
 "menu_bar_layout_token_line_break" = "Розрив рядка";
 "menu_bar_layout_token_separator_accessibility" = "Крапка-роздільник";
@@ -1465,7 +1466,6 @@
 "Reset time unavailable" = "Скидання о: Недоступний";
 "Run-out estimate unavailable" = "Закінчиться: Недоступний";
 "Cost today unavailable" = "Вартість сьогодні: Недоступний";
-"30-day cost unavailable" = "Вартість за 30 днів: Недоступний";
 "Resets" = "Скидання";
 "codex_workspaces_cost_unavailable" = "Вартість недоступна";
 "codex_workspaces_elevated_usage" = "Підвищене використання";
@@ -1550,6 +1550,7 @@
 "5-hour usage" = "Використання за 5 годин";
 "7-day usage" = "Використання за 7 днів";
 "Total usage" = "Загальне використання";
+"claude_oauth_keychain_access_disabled" = "Доступ до Keychain вимкнено, тому CodexBar не може прочитати дані входу в Claude.";
 "claude_oauth_keychain_access_revoked" = "Доступ до В’язки ключів Claude було відкликано через ротацію токена в Claude Code. Натисніть «Оновити», щоб повторно надати доступ, або перемкніть джерело використання Claude на CLI/Web.";
 "claude_showing_last_known_usage" = "Показано останні відомі дані про використання (отримано %@).";
 "claude_limited_usage_detail" = "Обмежена деталізація використання";
@@ -2517,7 +2518,15 @@
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
 
-/* Parallel provider cookie settings */
-"Paste the Cookie header from a signed-in platform.parallel.ai request." = "Вставте заголовок Cookie із зареєстрованого запиту platform.parallel.ai.";
-"Open Parallel Platform" = "Відкрийте платформу Parallel";
-"Automatic imports Chrome cookies from platform.parallel.ai." = "Автоматично імпортує файли cookie Chrome з platform.parallel.ai.";
+"Plan renewal / expiry" = "Поновлення / завершення плану";
+
+"Hidden by the global optional credits, spending & billing setting." = "Приховано глобальним налаштуванням додаткових кредитів, витрат і оплати.";
+
+"Provider order updated" = "Порядок провайдерів оновлено";
+"Undo" = "Скасувати";
+"Clear filters" = "Очистити фільтри";
+"Change provider order" = "Змінити порядок провайдерів";
+"Provider sorting" = "Сортування провайдерів";
+"Only enabled providers" = "Лише активні провайдери";
+"Restore default order" = "Відновити типовий порядок";
+"Also restores the provider order in the menu bar. Can be undone." = "Також відновлює порядок провайдерів у рядку меню. Дію можна скасувати.";

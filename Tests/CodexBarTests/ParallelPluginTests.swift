@@ -112,6 +112,7 @@ struct ParallelPluginTests {
             #"{"data":{"balance":12345}}"#,
             #"{"kind":"ok","data":{}}"#,
             #"{"kind":"ok","data":{"balance":"12345"}}"#,
+            #"{"kind":"ok","data":{"balance":""}}"#,
             #"{"kind":"ok","data":{"balance":null}}"#,
             #"{"kind":"ok","data":{"balance":1e400}}"#,
             #"{"kind":"ok"}"#,
@@ -219,6 +220,7 @@ struct ParallelPluginTests {
                 #expect(request.httpBody == Data("{}".utf8))
                 #expect(request.value(forHTTPHeaderField: "Content-Type") == "application/json")
                 #expect(request.value(forHTTPHeaderField: "Cookie") == Self.cookie)
+                #expect(request.value(forHTTPHeaderField: "Origin") == "https://platform.parallel.ai")
                 #expect(request.value(forHTTPHeaderField: "Authorization") == nil)
                 return try Self.response(request, reply)
             })

@@ -24,6 +24,7 @@ The bundled JavaScript plugin sends the same request the platform dashboard make
 ```
 POST https://platform.parallel.ai/api/rpc/billing/payments/refresh-balance
 Content-Type: application/json
+Origin: https://platform.parallel.ai
 
 {}
 ```

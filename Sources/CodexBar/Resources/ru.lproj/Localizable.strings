@@ -1412,6 +1412,7 @@
 "menu_bar_layout_preset_icon_only" = "Только значок";
 "menu_bar_layout_preset_percent_reset" = "Процент и сброс";
 "menu_bar_layout_preset_compact_stacked" = "Компактно в две строки";
+"menu_bar_layout_preset_bars_stacked" = "Столбцы прогресса штабелем";
 "menu_bar_layout_preset_custom" = "Пользовательский";
 "menu_bar_layout_live_preview" = "Предпросмотр";
 "menu_bar_layout_default_preview" = "Предпросмотр макета по умолчанию";
@@ -1449,7 +1450,7 @@
 "menu_bar_layout_token_reset_at" = "Сброс в";
 "menu_bar_layout_token_runs_out" = "Закончится";
 "menu_bar_layout_token_cost_today" = "Расход сегодня";
-"menu_bar_layout_token_cost_30d" = "Расход за 30 дней";
+"menu_bar_layout_token_cost_window" = "Расход (Окно истории)";
 "menu_bar_layout_token_space" = "Пробел";
 "menu_bar_layout_token_line_break" = "Разрыв строки";
 "menu_bar_layout_token_separator_accessibility" = "Точка-разделитель";
@@ -1467,7 +1468,6 @@
 "Reset time unavailable" = "Сброс в: Недоступно";
 "Run-out estimate unavailable" = "Закончится: Недоступно";
 "Cost today unavailable" = "Расход сегодня: Недоступно";
-"30-day cost unavailable" = "Расход за 30 дней: Недоступно";
 "Resets" = "Сбросы";
 "codex_workspaces_cost_unavailable" = "Стоимость недоступна";
 "codex_workspaces_elevated_usage" = "Повышенное использование";
@@ -1552,6 +1552,7 @@
 "5-hour usage" = "Использование за 5 часов";
 "7-day usage" = "Использование за 7 дней";
 "Total usage" = "Общее использование";
+"claude_oauth_keychain_access_disabled" = "Доступ к Keychain отключён, поэтому CodexBar не может прочитать данные входа в Claude.";
 "claude_oauth_keychain_access_revoked" = "Доступ к Связке ключей Claude был отозван из-за ротации токена в Claude Code. Нажмите «Обновить», чтобы повторно предоставить доступ, или переключите источник использования Claude на CLI/Web.";
 "claude_showing_last_known_usage" = "Показаны последние известные данные об использовании (получены %@).";
 "claude_limited_usage_detail" = "Ограниченная детализация использования";
@@ -2518,7 +2519,15 @@
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
 
-/* Parallel provider cookie settings */
-"Paste the Cookie header from a signed-in platform.parallel.ai request." = "Вставьте заголовок Cookie из запроса platform.parallel.ai, вошедшего в систему.";
-"Open Parallel Platform" = "Открыть платформу Parallel";
-"Automatic imports Chrome cookies from platform.parallel.ai." = "Автоматически импортирует cookie Chrome из platform.parallel.ai.";
+"Plan renewal / expiry" = "Продление / окончание плана";
+
+"Hidden by the global optional credits, spending & billing setting." = "Скрыто глобальной настройкой дополнительных кредитов, расходов и оплаты.";
+
+"Provider order updated" = "Порядок провайдеров обновлён";
+"Undo" = "Отменить";
+"Clear filters" = "Сбросить фильтры";
+"Change provider order" = "Изменить порядок провайдеров";
+"Provider sorting" = "Сортировка провайдеров";
+"Only enabled providers" = "Только активные провайдеры";
+"Restore default order" = "Восстановить исходный порядок";
+"Also restores the provider order in the menu bar. Can be undone." = "Также восстанавливает порядок провайдеров в строке меню. Действие можно отменить.";

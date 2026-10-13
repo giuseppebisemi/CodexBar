@@ -22,16 +22,16 @@ public enum ParallelProviderDescriptor {
             field: .init(
                 id: "parallel-cookie-header",
                 title: "Cookie header",
-                subtitle: "Paste the Cookie header from a signed-in platform.parallel.ai request.",
+                subtitle: "Paste the Cookie header from a billing-page request.",
                 placeholder: "Cookie: …",
                 action: (
                     id: "parallel-open-platform",
-                    title: "Open Parallel Platform",
+                    title: "Open Dashboard",
                     url: "https://platform.parallel.ai")),
             picker: .init(
                 id: "parallel-cookie-source",
                 allowsOff: true,
-                auto: .localized("Automatic imports Chrome cookies from platform.parallel.ai."),
+                auto: .localized("Automatic imports browser cookies."),
                 manual: .localized("Paste a Cookie header captured from %@.", argument: "platform.parallel.ai"),
                 off: .localized("%@ cookies are disabled.", argument: "Parallel"),
                 showsRefreshAction: true),

@@ -1409,6 +1409,7 @@
 "menu_bar_layout_preset_icon_only" = "Endast ikon";
 "menu_bar_layout_preset_percent_reset" = "Procent och återställning";
 "menu_bar_layout_preset_compact_stacked" = "Kompakt staplad";
+"menu_bar_layout_preset_bars_stacked" = "Framstegsmarkörer staplade";
 "menu_bar_layout_preset_custom" = "Anpassat";
 "menu_bar_layout_live_preview" = "Liveförhandsvisning";
 "menu_bar_layout_default_preview" = "Förhandsvisning av standardlayout";
@@ -1446,7 +1447,7 @@
 "menu_bar_layout_token_reset_at" = "Återställs kl.";
 "menu_bar_layout_token_runs_out" = "Tar slut";
 "menu_bar_layout_token_cost_today" = "Kostnad idag";
-"menu_bar_layout_token_cost_30d" = "Kostnad 30 dagar";
+"menu_bar_layout_token_cost_window" = "Kostnad (Historikfönster)";
 "menu_bar_layout_token_space" = "Blanksteg";
 "menu_bar_layout_token_line_break" = "Radbrytning";
 "menu_bar_layout_token_separator_accessibility" = "Avgränsarpunkt";
@@ -1464,7 +1465,6 @@
 "Reset time unavailable" = "Återställs kl.: Inte tillgänglig";
 "Run-out estimate unavailable" = "Tar slut: Inte tillgänglig";
 "Cost today unavailable" = "Kostnad idag: Inte tillgänglig";
-"30-day cost unavailable" = "Kostnad 30 dagar: Inte tillgänglig";
 "Resets" = "Återställningar";
 "codex_workspaces_cost_unavailable" = "Kostnaden är inte tillgänglig";
 "codex_workspaces_elevated_usage" = "Förhöjd användning";
@@ -1549,6 +1549,7 @@
 "5-hour usage" = "5-timmarsanvändning";
 "7-day usage" = "7-dagarsanvändning";
 "Total usage" = "Total användning";
+"claude_oauth_keychain_access_disabled" = "Åtkomst till Keychain är inaktiverad, så CodexBar kan inte läsa Claudes inloggningsuppgifter.";
 "claude_oauth_keychain_access_revoked" = "Åtkomsten till Claudes nyckelring återkallades när Claude Code roterade token. Klicka på Uppdatera för att ge åtkomst igen, eller byt Claudes användningskälla till CLI/Web.";
 "claude_showing_last_known_usage" = "Visar senast kända användning, registrerad %@.";
 "claude_limited_usage_detail" = "Begränsade användningsdetaljer";
@@ -2516,7 +2517,15 @@
 "ak_…" = "ak_…";
 "ws_…" = "ws_…";
 
-/* Parallel provider cookie settings */
-"Paste the Cookie header from a signed-in platform.parallel.ai request." = "Klistra in Cookie-huvudet från en inloggad platform.parallel.ai-förfrågan.";
-"Open Parallel Platform" = "Öppna Parallel-plattformen";
-"Automatic imports Chrome cookies from platform.parallel.ai." = "Importerar Chrome-cookies automatiskt från platform.parallel.ai.";
+"Plan renewal / expiry" = "Planförnyelse / utgångsdatum";
+
+"Hidden by the global optional credits, spending & billing setting." = "Dolt av den globala inställningen för valfria krediter, utgifter och faktureringsuppgifter.";
+
+"Provider order updated" = "Leverantörsordningen uppdaterad";
+"Undo" = "Ångra";
+"Clear filters" = "Rensa filter";
+"Change provider order" = "Ändra leverantörsordning";
+"Provider sorting" = "Sortera leverantörer";
+"Only enabled providers" = "Endast aktiverade leverantörer";
+"Restore default order" = "Återställ standardordning";
+"Also restores the provider order in the menu bar. Can be undone." = "Återställer även leverantörsordningen i menyraden. Kan ångras.";
